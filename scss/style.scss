@@ -4,4 +4,18 @@
 @import 'libs';
 @import 'global';
 
+.menu {
+  &__list-link {
+    color: $menu;
+  }
+}
 
+
+.footer {
+  &__text,
+  &__adress,
+  &__phone,
+  &__mail {
+    color: $text;
+  }
+}
