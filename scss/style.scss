@@ -18,6 +18,7 @@
   }
   &__list-link {
     color: $menu;
+    @extend %main-font;
   }
 }
 
@@ -60,5 +61,59 @@
   &__social-lists {
     display: flex;
     gap: 40px;
+  }
+}
+
+.wrapper {
+  &__container {
+    display: flex;
+  }
+  &__project {
+    margin-left: 135px;
+    margin-top: 235px;
+    color: $header;
+    text-transform: uppercase;
+    @extend %title-font;
+    font-size: 64px;
+  }
+  &__lorum {
+    margin-left: 135px;
+    color: $menu;
+    text-transform: uppercase;
+    @extend %text-font;
+    font-size: 64px;
+  }
+  &__arrow {
+    margin-left: 135px;
+    margin-top: 90px;
+    margin-bottom: 52px;
+    display: flex;
+    gap: 23px;
+  }
+  &__images {
+    margin-left: 250px;
+    margin-top: 30px;
+  }
+  &__images img {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  &__project-1 {
+    width: 670px;
+    height: 435px;
+  }
+  &__project-2,
+  &__project-3 {
+    display: none;
+  }
+  &__view {
+    color: $menu;
+    display: flex;
+    margin: auto;
+    padding: 50px;
+    gap: 16px;
+    margin-top: 12px;
+    text-transform: uppercase;
+    @extend %main-font;
+    font-size: 16px;
   }
 }

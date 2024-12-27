@@ -1,3 +1,19 @@
 
 $menu: #333333;
 $text: #ffff;
+$header: #BDBDBD;
+
+%title-font {
+  font-family: "Roboto", light;
+  font-weight: 300;
+}
+
+%text-font {
+  font-family: "Roboto", bold;
+  font-weight: 700;
+}
+
+%main-font {
+  font-family: "Roboto", regular;
+  font-weight: 400;
+}
