@@ -97,15 +97,89 @@
   &__images img {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   }
-  &__project-1 {
+  &__project-1,
+  &__project-2,
+  &__project-3 {
     width: 670px;
     height: 435px;
   }
-  &__project-2,
-  &__project-3 {
-    display: none;
-  }
   &__view {
+    color: $menu;
+    display: flex;
+    margin: auto;
+    padding: 50px;
+    gap: 16px;
+    margin-top: 12px;
+    text-transform: uppercase;
+    @extend %main-font;
+    font-size: 16px;
+  }
+}
+
+.wrapper__arrow-left, .wrapper__arrow-right {
+  color: rgba(249, 249, 249, 0.4);
+  border: none;
+  cursor: pointer;
+  padding: 22px 18px;
+  background: rgba(230, 226, 226, 0.2);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.wrapper__arrow-left:hover, .wrapper__arrow-right:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.wrapper__images img {
+  display: none;
+}
+
+.wrapper__images img:first-of-type {
+  display: block;
+}
+
+.about {
+  &__container {
+    background-color: #FBFBFB;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 135px;
+  }
+  &__left-side {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  &__left-img-1,
+  &__left-img-2 {
+    width: 100%;
+    display: block;
+  }
+  &__left-img-3 {
+    width: 50%;
+    align-self: flex;
+  }
+  &__left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+  }
+  &__right-side {
+    display: block;
+    max-width: 50%;
+    padding: 50px;
+  }
+  &__right-title {
+    color: $header;
+    @extend %title-font;
+    font-size: 46px;
+  }
+  &__right-text {
+    @extend %title-font;
+    margin-top: 12px;
+  }
+  &__read {
     color: $menu;
     display: flex;
     margin: auto;
