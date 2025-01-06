@@ -20,3 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
     showImage(currentImageIndex);
   });
 });
+
+
+const projectsButton = document.getElementById('projectsBtn');
+
+projectsButton.addEventListener('click', () => {
+  window.location.href = 'projects.html';
+});
