@@ -263,6 +263,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    overflow: hidden;
   }
   &__info {
     position: absolute;
@@ -271,6 +272,25 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: left;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .projects__item:hover .projects__info {
+    opacity: 1;
+  }
+  .projects__item:hover::before {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .projects__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease;
     z-index: 1;
   }
   &__img-1, &__img-2, &__img-3, &__img-4, &__img-5 {
