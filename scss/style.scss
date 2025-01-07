@@ -19,7 +19,36 @@
   &__list-link {
     color: $menu;
     @extend %main-font;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 0;
+    transition: color 0.3s ease;
   }
+}
+.menu__list-link:hover {
+  color: #555;
+}
+.menu__list-link::before,
+.menu__list-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.menu__list-link::before {
+  top: 0;
+}
+.menu__list-link::after {
+  bottom: 0;
+}
+.menu__list-link:hover::before,
+.menu__list-link:hover::after {
+  transform: scaleX(1);
 }
 
 
