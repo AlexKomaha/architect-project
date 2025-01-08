@@ -372,7 +372,7 @@
     @extend %title-font;
     padding-bottom: 20px;
     padding-left: 135px;
-    padding-top: 80px;
+    padding-top: 20px;
   }
   &__container {
     display: flex;
@@ -428,7 +428,6 @@
     width: 3049px;
   }
   &__btn-container {
-    margin-left: 135px;
     margin-bottom: 120px;
     margin-top: 77px;
     background-color: #333333;
