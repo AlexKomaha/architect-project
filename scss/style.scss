@@ -446,3 +446,29 @@
     text-transform: uppercase;
   }
 }
+.certifications {
+  &__title {
+    font-size: 64px;
+    color: $header;
+    @extend %title-font;
+    padding-bottom: 20px;
+    padding-left: 135px;
+    padding-top: 20px;
+  }
+  &__text {
+    margin-left: 135px;
+    color: $menu;
+    text-transform: uppercase;
+    @extend %text-font;
+    font-size: 64px;
+  }
+}
+.certification-image {
+  margin: 60px 135px;
+  &__img {
+    width: 1190px;
+    height: 690px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    filter: brightness(85%);
+  }
+}
