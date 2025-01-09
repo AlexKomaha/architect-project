@@ -29,4 +29,4 @@ projectsButton.addEventListener('click', () => {
 });
 
 
-//Gallery buttons
+

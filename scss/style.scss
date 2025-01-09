@@ -525,10 +525,6 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.gallery__item img {
-  display: none;
-}
-
-.gallery__item img:first-of-type {
+.gallery__item {
   display: block;
 }
