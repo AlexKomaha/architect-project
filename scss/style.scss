@@ -528,3 +528,63 @@
 .gallery__item {
   display: block;
 }
+
+.contacts-page {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 112px;
+  margin-left: 135px;
+  &__left-title {
+    font-size: 64px;
+    color: $header;
+    @extend %title-font;
+    padding-top: 20px;
+  }
+  &__left-text {
+    color: $menu;
+    text-transform: uppercase;
+    @extend %text-font;
+    font-size: 64px;
+  }
+  &__left-name {
+    font-size: 20px;
+    @extend %text-font;
+    padding-top: 34px;
+  }
+  &__left-tel {
+    font-size: 20px;
+    @extend %text-font;
+    padding-top: 44px;
+    padding-bottom: 53px;
+  }
+  &__left-adress {
+    font-size: 18px;
+    @extend %title-font;
+    color: $menu;
+  }
+  &__left-mail {
+    font-size: 18px;
+    @extend %title-font;
+    color: $menu;
+    padding-bottom: 33px;
+  }
+  &__left-btn {
+    background-color: #333333;
+    width: 220px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 71px;
+    cursor: pointer;
+  }
+  &__left-contact {
+    font-size: 12px;
+    color: #FFFFFF;
+    @extend %main-font;
+    text-transform: uppercase;
+  }
+}
+.contacts-page__map-container {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
+}
