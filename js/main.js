@@ -29,4 +29,4 @@ projectsButton.addEventListener('click', () => {
 });
 
 
-// ThankYouMessage Index-Contacts
+//Gallery buttons
