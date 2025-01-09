@@ -472,3 +472,63 @@
     filter: brightness(85%);
   }
 }
+
+.gallery {
+  margin-bottom: 120px;
+  &__title {
+    font-size: 64px;
+    color: $header;
+    @extend %title-font;
+    padding-bottom: 20px;
+    padding-left: 135px;
+    padding-top: 20px;
+  }
+  &__text {
+    margin-left: 135px;
+    color: $menu;
+    text-transform: uppercase;
+    @extend %text-font;
+    font-size: 64px;
+  }
+  &__inner {
+    margin-left: 135px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  &__item {
+    width: calc(20% - 10px);
+    margin-bottom: 10px;
+  }
+  &__buttons {
+    margin-left: 135px;
+    margin-top: 90px;
+    margin-bottom: 52px;
+    display: flex;
+    gap: 23px;
+  }
+}
+
+.gallery__buttons-left, .gallery__buttons-right {
+  color: rgba(249, 249, 249, 0.4);
+  border: none;
+  cursor: pointer;
+  padding: 22px 18px;
+  background: rgba(230, 226, 226, 0.2);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.gallery__buttons-left:hover, .gallery__buttons-right:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.gallery__item img {
+  display: none;
+}
+
+.gallery__item img:first-of-type {
+  display: block;
+}
