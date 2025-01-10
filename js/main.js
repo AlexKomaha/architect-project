@@ -27,6 +27,3 @@ const projectsButton = document.getElementById('projectsBtn');
 projectsButton.addEventListener('click', () => {
   window.location.href = 'projects.html';
 });
-
-
-
