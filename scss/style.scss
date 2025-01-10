@@ -592,8 +592,22 @@
 .projects-page {
   margin-left: 135px;
   margin-right: 135px;
+  &__title {
+    font-size: 64px;
+    color: $header;
+    @extend %title-font;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  &__text {
+    color: $menu;
+    text-transform: uppercase;
+    @extend %text-font;
+    font-size: 64px;
+  }
   &__group {
     margin-top: 60px;
+    background-color: #FBFBFB;
   }
   &__group-one,
   &__group-two,
@@ -605,9 +619,43 @@
   &__group-three {
     margin-bottom: 60px;
   }
+  &__group-right {
+    max-width: 40%;
+    margin-right: 40px;
+  }
+  &__group-right-title {
+    font-size: 40px;
+    @extend %title-font;
+    color: $header;
+    margin-bottom: 73px;
+    margin-top: 30px;
+  }
+  &__group-right-text {
+    font-size: 16px;
+    @extend %title-font;
+    margin-bottom: 64px;
+  }
+  &__group-right-btn {
+    background-color: #FFFFFF;
+    width: 220px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 60px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 30px;
+  }
+  &__group-right-btn-text {
+    font-size: 16px;
+    color: $menu;
+  }
 }
 
 .projects-page__group-left-img {
-  width: 540px;
-  height: 335px;
+  width: 670px;
+  height: 435px;
+  @extend %main-font;
+  text-transform: uppercase;
 }
