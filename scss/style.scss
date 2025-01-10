@@ -588,3 +588,26 @@
 .contacts-page__map-container {
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
 }
+
+.projects-page {
+  margin-left: 135px;
+  margin-right: 135px;
+  &__group {
+    margin-top: 60px;
+  }
+  &__group-one,
+  &__group-two,
+  &__group-three {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__group-three {
+    margin-bottom: 60px;
+  }
+}
+
+.projects-page__group-left-img {
+  width: 540px;
+  height: 335px;
+}
