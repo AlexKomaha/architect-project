@@ -1,3 +1,9 @@
+$(function () {
+  $('.header__btn-menu').on('click', function () {
+    $('.menu').toggleClass('menu--open');
+  });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
   const leftArrow = document.querySelector('.wrapper__arrow-left');
   const rightArrow = document.querySelector('.wrapper__arrow-right');

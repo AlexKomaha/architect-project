@@ -4,6 +4,11 @@
 @import 'libs';
 @import 'global';
 
+.header {
+  &__btn-menu {
+    display: none;
+  }
+}
 .container {
   display: flex;
   justify-content: space-between;

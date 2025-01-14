@@ -46,9 +46,12 @@
   .footer__social {
     display: none;
   }
+  .logo img {
+    display: none;
+  }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 665px) {
   .contacts-page {
     &__left-title,
     &__left-text {
@@ -56,7 +59,46 @@
     }
   }
   .logo img {
-    display: none;
+    display: flex;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+  .menu {
+    padding-right: 0;
+    width: 100%;
+    position: relative;
+    z-index: 11;
+    background-color: #fff;
+    text-align: center;
+    transform: translateY(-250px);
+    padding-top: 42px;
+    transition: all .5s;
+    &--open {
+      transform: translateY(30px);
+    }
+  }
+  .header__btn-menu {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    span {
+      background-color: black;
+      height: 3px;
+      width: 37px;
+      border-radius: 2px;
+      display: block;
+      margin: 6px 0;
+    }
+  }
+  .menu__list {
+    display: block;
+  }
+  .menu__list-link {
+    display: block;
+    padding: 15px 0;
   }
 }
 
