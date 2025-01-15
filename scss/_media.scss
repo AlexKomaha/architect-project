@@ -10,7 +10,9 @@
 }
 
 @media (max-width: 1118px) {
-  .certifications__title {
+  .certifications__title,
+  .gallery__title,
+  .gallery__text {
     font-size: 36px;
   }
   .certifications__text {
@@ -117,6 +119,14 @@
   }
   .projectone__mainimg {
     height: 252px;
+  }
+  .gallery__buttons {
+    margin-left: 0px;
+    margin-top: 40px;
+    margin-bottom: -55px;
+  }
+  .gallery__item {
+    width: calc(30% - 5px);
   }
 }
 
@@ -238,8 +248,16 @@
     margin-bottom: 20px;
   }
   .projectone__title,
-  .projectone__text {
+  .projectone__text,
+  .gallery__title,
+  .gallery__text {
     font-size: 28px;
+  }
+  .gallery {
+    margin-right: 20px;
+  }
+  .gallery__item {
+    width: calc(40% - 5px);
   }
 }
 
@@ -283,5 +301,5 @@
   .projects-page__group-right-title {
     font-size: 28px;
   }
-  
+
 }
