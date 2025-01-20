@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+<body>
+
+  <div class="contacts">
+    <div class="cross-link">
+      <h2 class="contacts__title-form">Contact Us</h2>
+    <a href="index.html" class="cross-link__img">
+      <img src="images/contact-form/form-1.svg" alt="form">
+    </a>
+  </div>
+    <div class="contacts__container-form">
+      <div class="contacts__left">
+        <form class="contacts__form" action="/submit" method="post">
+          <input class="contacts__form-input" placeholder="Name" type="text" required>
+          <input class="contacts__form-input" placeholder="Phone Number" type="tel" pattern="^\+?[0-9\s\-\(\)]{7,20}$" required>
+          <input class="contacts__form-input" placeholder="E-mail" type="email" required>
+          <textarea class="contacts__form-area-interested" placeholder="Interested In"></textarea>
+          <textarea class="contacts__form-area-message" placeholder="Message" required></textarea>
+          <div class="contacts__checkbox-form">
+            <input type="checkbox" id="singleCheckbox" name="singleCheckbox">
+            <label for="singleCheckbox">By submitting your application you agree to the privacy policy</label>
+          </div>
+
+          <div class="contacts__btn">
+            <button class="contacts__btn-container-form" type="submit" id="contactsBtn">
+              <p class="contacts__btn-text">Send</p>
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <script src="js/contacts.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

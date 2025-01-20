@@ -140,6 +140,7 @@
   &__view {
     color: $menu;
     display: flex;
+    justify-content: center;
     margin: auto;
     padding: 50px;
     gap: 16px;
@@ -385,6 +386,21 @@
     align-items: flex-start;
     margin: 0 135px;
   }
+  &__title-form {
+    display: flex;
+    justify-content: center;
+    font-size: 64px;
+    color: $header;
+    @extend %title-font;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  &__container-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 535px;
+  }
   &__left {
     display: flex;
     flex-direction: column;
@@ -443,6 +459,21 @@
     gap: 10px;
     padding-left: 60px;
     cursor: pointer;
+  }
+  &__btn-container-form {
+    margin-bottom: 120px;
+    margin-top: 77px;
+    background-color: #333333;
+    width: 391px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 175px;
+    cursor: pointer;
+  }
+  &__checkbox-form {
+    padding-top: 15px;
   }
   &__btn-text {
     font-size: 12px;
@@ -510,7 +541,7 @@
   }
   &__buttons {
     margin-left: 135px;
-    margin-top: 90px;
+    margin-top: 50px;
     margin-bottom: 52px;
     display: flex;
     gap: 23px;
@@ -704,6 +735,23 @@
     width: 419px;
     height: 318px;
   }
+}
+
+.cross-link {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  &__img {
+    margin-left: 40px;
+    margin-top: 55px;
+  }
+}
+.contacts__title-form {
+  display: flex;
+  color: #333333;
+}
+.contacts__btn-container-form {
+  margin-top: 27px;
 }
 
 
