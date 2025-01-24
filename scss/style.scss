@@ -754,5 +754,28 @@
   margin-top: 27px;
 }
 
+.contacts-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120px;
+  gap: 24px;
+  margin-top: 44px;
+}
+
+.cross-link__form {
+  margin-left: 520px;
+}
+
+.thanks {
+  color: $menu;
+  @extend %text-font;
+  font-size: 24px;
+  &__p {
+    @extend %text-font;
+  }
+}
+
+
 
 @import "media";
