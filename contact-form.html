@@ -18,12 +18,12 @@
   </div>
     <div class="contacts__container-form">
       <div class="contacts__left">
-        <form class="contacts__form" action="/submit" method="post">
-          <input class="contacts__form-input" placeholder="Name" type="text" required>
-          <input class="contacts__form-input" placeholder="Phone Number" type="tel" pattern="^\+?[0-9\s\-\(\)]{7,20}$" required>
-          <input class="contacts__form-input" placeholder="E-mail" type="email" required>
-          <textarea class="contacts__form-area-interested" placeholder="Interested In"></textarea>
-          <textarea class="contacts__form-area-message" placeholder="Message" required></textarea>
+        <form class="contacts__form">
+          <input class="contacts__form-input" name="name" placeholder="Name" type="text" required>
+          <input class="contacts__form-input" name="phone" placeholder="Phone Number" type="tel" pattern="^\+?[0-9\s\-\(\)]{7,20}$" required>
+          <input class="contacts__form-input" name="email" placeholder="E-mail" type="email" required>
+          <textarea class="contacts__form-area-interested" name="interested" placeholder="Interested In"></textarea>
+          <textarea class="contacts__form-area-message" name="message" placeholder="Message" required></textarea>
           <div class="contacts__checkbox-form">
             <input type="checkbox" id="singleCheckbox" name="singleCheckbox">
             <label for="singleCheckbox">By submitting your application you agree to the privacy policy</label>
@@ -40,6 +40,7 @@
     </div>
   </div>
   <script src="js/contacts.js"></script>
+  <script src="js/server.js"></script>
   <script src="js/main.js"></script>
   <script src="js/main.min.js"></script>
 </body>
