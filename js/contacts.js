@@ -49,11 +49,10 @@ $(document).ready(() => {
       success: (response) => {
         alert(response);
       },
-      error: (xhr, status, error) => {
-        console.error('Error:', error);
-        alert('Failed to save data. Please try again.');
-      },
+      // error: (xhr, status, error) => {
+      //   console.error('Error:', error);
+      //   alert('Failed to save data. Please try again.');
+      // },
     });
   });
 });
-
